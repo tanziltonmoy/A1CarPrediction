@@ -13,17 +13,29 @@ The project's primary objective is to develop a predictive model to determine th
 The dataset provided contains various features related to cars, including:
 
 **Name:** Brand name of the car.
+
 **Year:** Year of manufacture.
+
 **Selling Price:** Price at which the car is being sold.
+
 **Km Driven:** Total kilometers driven by the car.
+
 **Fuel:** Type of fuel used by the car.
+
 **Seller Type:** Type of seller (Individual, Dealer, etc.).
+
 **Transmission:** Transmission type of the car (Manual, Automatic).
+
 **Owner:** Number of previous owners.
+
 **Mileage:** Car's mileage.
+
 **Engine:** Size of the engine.
+
 **Max Power:** Maximum power of the car.
+
 **Torque:** Torque of the engine.
+
 **Seats:** Number of seats in the car.
 
 ## Preprocessing
@@ -65,36 +77,36 @@ The EDA process involved both univariate and multivariate analyses, leveraging t
 ## Predictive Power Score
 ![](snapshots/PPS.png)
 
-Age:
+**Age:**
 
 Has a PPS of 0.36 with respect to selling_price, suggesting a moderate predictive relationship where the age of a car can help predict its selling price.
 
-Engine:
+**Engine:**
 
 Has a significant PPS of 0.8 with max_power, indicating that the size of the engine is highly predictive of the car's power output.
 
-Fuel_Petrol:
+**Fuel_Petrol:**
 
 Shows a PPS of 0.9 with engine, which is expected.
 
-Km_Driven:
+**Km_Driven:**
 
 Has a low PPS with respect to selling_price (0.05), suggesting it is not a strong predictor of the selling price on its own.
 
-Max_Power:
+**Max_Power:**
 
 Shows a PPS of 0.38 with selling_price, indicating a reasonably strong predictive power on the selling price.
 Has a PPS of 0.76 with engine, further confirming the strong relationship between engine size and max power.
 
-Milage: 
+**Milage:** 
 
 Show low PPS of 0.08 with selling_price
 
-Seats:
+**Seats:**
 
 Shows a good predictive relationship with engine (0.43), indicating that the number of seats might predict the engine size, possibly due to larger cars with more seats having bigger engines.
 
-Seller_Type (Individual and Trustmark Dealer):
+**Seller_Type (Individual and Trustmark Dealer):**
 
 Both show low PPS scores with respect to selling_price, suggesting that seller type might not be a strong predictor of selling price in isolation.
 
@@ -150,7 +162,8 @@ docker compose up --build
 
 Access the app with **http://localhost:9001**
 
-Conclusion and Recommendations
+
+**Conclusion and Recommendations:**
 
 
 In conclusion, the Random-Forest Regressor outperforms the other algorithms due to its ability to average out the errors of individual trees, thereby reducing overfitting and improving generalization to new data. The less well-performing algorithms, such as Linear Regression and Decision-Tree Regressor, might be suffering from either oversimplification of the problem or overfitting to the training data. The choice of algorithm should always be based on the specific characteristics of the data and the underlying patterns that need to be modeled.
