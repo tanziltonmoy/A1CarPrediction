@@ -145,7 +145,7 @@ All the files reqiured for setting up Dash deployment are in ```app/code``` dire
  Then, access the Dash Application: Once the script is running, open a web browser and visit **http://localhost:9001/**  to access the car selling price prediction web application.
 
 
-![](snapshots/DASH.png)
+![](snapshots/Dash.png)
 
 
  ### Docker Compose to run the app in a Docker container
