@@ -136,8 +136,6 @@ The R-squared (R2) score measures the proportion of the variance in the target v
 
 
 
-### Dash App Deployment 
-
 All the files reqiured for setting up Dash deployment are in ```app/code``` directory. Need to open the terminal and navigate to the directory ```app/code```. Finally run the below command.
 
  ```
@@ -147,8 +145,7 @@ All the files reqiured for setting up Dash deployment are in ```app/code``` dire
  Then, access the Dash Application: Once the script is running, open a web browser and visit **http://localhost:9001/**  to access the car selling price prediction web application.
 
 
- ![](snapshots/DASH.png)
-
+![](snapshots/DASH.png)
 
 
  ### Docker Compose to run the app in a Docker container
