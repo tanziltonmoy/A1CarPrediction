@@ -1,5 +1,3 @@
-# Import packages
-
 from dash import Dash, html, callback, Output, Input, State, dcc
 import dash_bootstrap_components as dbc
 import pickle
